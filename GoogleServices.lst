@@ -1,0 +1,85 @@
+# Disable most of Google Play Services / Google Services Framework components
+# including location but leaving system update check (uncomment lines to disable system update)
+# Google Play Services (com.google.android.gms)
+# ACTIVITIES
+com.google.android.gms/gcm.GcmDiagnostics
+com.google.android.gms/ads.settings.AdsSettingsActivity
+com.google.android.gms/feedback.FeedbackActivity
+com.google.android.gms/feedback.PreviewScreenshotActivity
+com.google.android.gms/feedback.PreviewActivity
+com.google.android.gms/feedback.ShowTextActivity
+com.google.android.gms/ocr.SecuredCreditCardOcrActivity
+com.google.android.gms/people.pub.PeopleProfileActionGatewayActivity
+#com.google.android.gms/update.SystemUpdateActivity
+com.google.android.gms/com.google.android.location.network.ConfirmAlertActivity
+com.google.android.gms/com.google.android.location.places.ui.PlacePicker
+com.google.android.gms/com.google.android.location.settings.GoogleLocationSettingsActivity
+com.google.android.gms/com.google.android.location.settings.LocationReportingSettingsActivity
+com.google.android.gms/com.google.android.location.settings.LocationHistorySettingsActivity
+com.google.android.gms/com.google.android.location.settings.ActivityRecognitionPermissionActivity
+com.google.android.gms/plus.location.LocationSharingSettingsActivity
+# PROVIDERS
+#com.google.android.gms/update.SystemUpdateService$SecretCodeReceiver
+com.google.android.gms/ads.adinfo.AdvertisingInfoContentProvider
+com.google.android.gms/com.google.android.location.internal.LocationContentProvider
+com.google.android.gms/com.google.android.location.reporting.service.ReportingContentProvider
+#com.google.android.gms/update.SystemUpdateService$Receiver
+#com.google.android.gms/update.SystemUpdateService$ActiveReceiver
+com.google.android.gms/ads.social.DoritosReceiver
+com.google.android.gms/ads.measurement.AdsMeasurementBroadcastReceiver
+com.google.android.gms/app.receiver.OneTimeInitializerReceiver
+#com.google.android.gms/cast.media.CastRemoteDisplayProvider$Receiver
+#com.google.android.gms/cast.media.CastMirroringProvider$Receiver
+com.google.android.gms/com.google.android.location.internal.NlpNetworkProviderSettingsUpdateReceiver
+com.google.android.gms/com.google.android.location.network.ConfirmAlertActivity$LocationModeChangingReceiver
+com.google.android.gms/com.google.android.location.network.LocationProviderChangeReceiver
+com.google.android.gms/com.google.android.location.reporting.service.ExternalChangeReceiver
+com.google.android.gms/com.google.android.location.places.ImplicitSignalsReceiver
+# SERVICES
+com.google.android.gms/analytics.service.AnalyticsService
+com.google.android.gms/analytics.service.RefreshEnabledStateService
+com.google.android.gms/ads.AdRequestBrokerService
+com.google.android.gms/ads.social.GcmSchedulerWakeupService
+com.google.android.gms/ads.identifier.service.AdvertisingIdService
+com.google.android.gms/ads.measurement.AdsMeasurementService
+com.google.android.gms/feedback.LegacyBugReportService
+com.google.android.gms/feedback.SendService
+com.google.android.gms/feedback.FeedbackService
+com.google.android.gms/googlehelp.serviceMetricsReportService
+com.google.android.gms/googlehelp.service.ClearHelpHistoryIntentService
+com.google.android.gms/com.google.android.location.wearable.LocationWearableListenerService
+com.google.android.gms/com.google.android.location.fused.NlpLocationReceiverService
+com.google.android.gms/com.google.android.location.geocode.GeocodeService
+com.google.android.gms/com.google.android.location.network.NetworkLocationService
+com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService
+com.google.android.gms/com.google.android.location.geofencer.service.GeofenceProviderService
+com.google.android.gms/com.google.android.location.fused.service.FusedProviderService
+com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService
+com.google.android.gms/com.google.android.location.reporting.LocationReportingService
+com.google.android.gms/com.google.android.location.reporting.service.ReportingSyncService
+com.google.android.gms/com.google.android.location.reporting.service.LocationHistoryInjectorService
+com.google.android.gms/com.google.android.location.reporting.service.DispatchingService
+com.google.android.gms/com.google.android.location.reporting.service.InitializerService
+com.google.android.gms/com.google.android.location.reporting.service.PreferenceService
+com.google.android.gms/com.google.android.location.reporting.service.DeleteHistoryService
+com.google.android.gms/com.google.android.location.reporting.service.PlaylogService
+
+# Google Services Framework (com.google.android.gsf)
+# ACTIVITIES
+#com.google.android.gsf/update.SystemUpdateActivity
+#com.google.android.gsf/update.SystemUpdatePanoActivity
+# PROVIDERS
+#com.google.android.gsf/checkin.CheckinServices$Receiver
+#com.google.android.gsf/checkin.CheckinService$TriggerReceiver
+#com.google.android.gsf/checkin.CheckinService$SecretCodeReceiver
+#com.google.android.gsf/checkin.EventLogService$Receiver
+#com.google.android.gsf/update.SystemUpdateService$SecretCodeReceiver
+#com.google.android.gsf/update.SystemUpdateService$Receiver
+#com.google.android.gsf/loginservice.MigrateToAccountManagerBroadcastReceiver
+com.google.android.gsf/usagestats.StatsUploadService$Receiver
+# SERVICES
+com.google.android.gsf/checkin.CheckinService
+#com.google.android.gsf/checkin.EventLogService
+#com.google.android.gsf/update.SystemUpdateService
+#com.google.android.gsf/subscribedfeeds.GCMIntentService
+com.google.android.gsf/usagestats.StatsUploadService
